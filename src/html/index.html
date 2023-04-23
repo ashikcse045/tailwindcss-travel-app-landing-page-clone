@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>travel app</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="../../styles/style.css" />
+  </head>
+  <body class="bg-[#F7FAFD]">
+    <header>
+      <!-- nav section -->
+      <div
+        class="container p-[1rem] py-1 flex md:block lg:flex justify-between md:justify-center lg:justify-between"
+      >
+        <!-- logo -->
+        <div
+          class="w-32 md:py-2 lg:py-0 block md:mx-auto lg:mx-0 md:flex-initial 2xl:w-48 md:flex md:items-center md:justify-center"
+        >
+          <a
+            href="./index.html"
+            class="pr-3 2xl:pr-6 border-r-2 md:border-r-0 lg:border-r-2 border-gray-200 flex"
+          >
+            <img src="../../img/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <!-- bars -->
+        <div class="bars flex items-center md:hidden">
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+
+        <!-- nav container -->
+        <div
+          class="hidden md:py-2 lg:py-0 lg:flex-initial lg:grow justify-center md:flex items-center"
+        >
+          <!-- nav container -->
+          <div class="flex items-center capitalize lg:text-lg text-gray-600">
+            <a
+              href="#"
+              class="md:px-2 2xl:px-5 py-2 2xl:py-4 transition-colors hover:bg-primary hover:text-white"
+              >home</a
+            >
+            <a
+              href="#"
+              class="md:px-2 2xl:px-5 py-2 2xl:py-4 transition-colors hover:bg-primary hover:text-white"
+              >about</a
+            >
+            <a
+              href="#"
+              class="md:px-2 2xl:px-5 py-2 2xl:py-4 transition-colors hover:bg-primary hover:text-white"
+              >destination</a
+            >
+            <a
+              href="#"
+              class="md:px-2 2xl:px-5 py-2 2xl:py-4 transition-colors hover:bg-primary hover:text-white flex items-center"
+              >pages<span class="material-symbols-outlined"> expand_more </span>
+            </a>
+            <a
+              href="#"
+              class="md:px-2 2xl:px-5 py-2 2xl:py-4 transition-colors hover:bg-primary hover:text-white flex items-center"
+              >blog<span class="material-symbols-outlined"> expand_more </span>
+            </a>
+            <a
+              href="#"
+              class="md:px-2 2xl:px-5 py-2 2xl:py-4 transition-colors hover:bg-primary hover:text-white"
+              >contact</a
+            >
+          </div>
+        </div>
+
+        <!-- contact details -->
+        <div class="hidden lg:flex text-sm items-center text-right">
+          <div
+            class="phone flex items-center text-sm 2xl:text-lg text-gray-600 pr-4 border-r-2 border-gray-200"
+          >
+            <span class="material-symbols-outlined 2xl:mr-2">
+              phone_in_talk
+            </span>
+            <span>+880 1521-505230</span>
+          </div>
+
+          <!-- social media links -->
+          <div
+            class="social-media lg:flex md:space-x-2 2xl:space-x-4 px-2 2xl:px-4"
+          >
+            <a href="#" class="text-gray-600 hover:text-primary" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="text-gray-600 hover:text-primary" target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="text-gray-600 hover:text-primary" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-600 hover:text-primary" target="_blank"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- serarch icon -->
+        <div
+          class="hidden search-icon lg:flex lg:items-center lg:justify-center lg:w-10 2xl:w-16 bg-primary text-white cursor-pointer"
+        >
+          <span class="material-symbols-outlined"> search </span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- main container -->
+      <div class="container box-border min-h-[calc(100vh-65px)]">
+        <!-- banner -->
+        <div
+          class="flex items-center justify-center py-6 min-h-[220px] lg:h-[650px] bg-cover bg-no-repeat bg-center bg-[url('../../img/banner.jpg')]"
+        >
+          <!-- banner box -->
+          <div class="text-center">
+            <h1
+              class="text-center text-4xl md:text-6xl lg:text-8xl text-white font-fancy mx-auto uppercase"
+            >
+              bangladesh
+            </h1>
+            <p
+              class="text-base px-1 text-white font-popins my-4 tracking-wider"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate, repudiandae
+            </p>
+            <button
+              class="bg-secondary hover:bg-teal-500 transition-colors text-white py-2 px-4 capitalize rounded-md mt-14"
+            >
+              explore now
+            </button>
+          </div>
+        </div>
+
+        <!-- search content -->
+        <div class="bg-tertiary">
+          <form action="block box-border">
+            <div
+              class="text-center space-y-4 lg:space-y-0 lg:flex flex-row items-center justify-between lg:space-x-4 small-container px-4 lg:px-8 xl:px-0"
+            >
+              <p class="text-white text-xl">Where you want to go?</p>
+              <input
+                type="text"
+                placeholder="Where to go?"
+                class="block lg:inline-block w-full lg:w-44 text-xl py-2 px-2 rounded-md bg-transparent outline-none border border-gray-500 focus:border-gray-400 text-gray-400"
+              />
+              <select
+                name=""
+                id=""
+                class="block lg:inline-block w-full lg:w-44 text-xl py-2 px-2 rounded-md bg-transparent outline-none border border-gray-500 focus:border-gray-400 text-gray-400"
+              >
+                <option value="0">Date</option>
+              </select>
+              <select
+                name=""
+                id=""
+                class="block lg:inline-block w-full lg:w-44 text-xl py-2 px-2 rounded-md bg-transparent outline-none border border-gray-500 focus:border-gray-400 text-gray-400"
+              >
+                <option value="0">Travel type</option>
+              </select>
+              <button
+                class="bg-primary hover:bg-red-500 transition-colors text-white py-3 px-8 rounded-md font-semibold tracking-wider"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- destination -->
+        <div class="small-container">
+          <div class="w-full lg:w-1/2 text-center mx-auto">
+            <h2 class="capitalize text-4xl font-semibold">
+              popular destination
+            </h2>
+            <p class="py-4 text-lg text-gray-600">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              atque, aut esse ab modi accusantium qui corrupti. Ab, quidem
+              blanditiis?
+            </p>
+          </div>
+
+          <!-- destination photo -->
+          <div class="gallery">
+            <a href="#" class="relative">
+              <img class="rounded-lg" src="../../img/bangladesh.jpg" alt="" />
+              <div class="absolute bottom-7 left-3 flex items-center space-x-4">
+                <span
+                  class="capitalize text-xl lg:text-2xl 2xl:text-3xl text-white"
+                  >bangladesh</span
+                >
+                <span
+                  class="bg-secondary text-white rounded-full xl:py-1 px-3 lg:px-4 2xl:px-6"
+                  >3 places</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="relative">
+              <img class="rounded-lg" src="../../img/bangladesh.jpg" alt="" />
+              <div class="absolute bottom-7 left-3 flex items-center space-x-4">
+                <span
+                  class="capitalize text-xl lg:text-2xl 2xl:text-3xl text-white"
+                  >bangladesh</span
+                >
+                <span
+                  class="bg-secondary text-white rounded-full xl:py-1 px-3 lg:px-4 2xl:px-6"
+                  >3 places</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="relative">
+              <img class="rounded-lg" src="../../img/bangladesh.jpg" alt="" />
+              <div class="absolute bottom-7 left-3 flex items-center space-x-4">
+                <span
+                  class="capitalize text-xl lg:text-2xl 2xl:text-3xl text-white"
+                  >bangladesh</span
+                >
+                <span
+                  class="bg-secondary text-white rounded-full xl:py-1 px-3 lg:px-4 2xl:px-6"
+                  >3 places</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="relative">
+              <img class="rounded-lg" src="../../img/bangladesh.jpg" alt="" />
+              <div class="absolute bottom-7 left-3 flex items-center space-x-4">
+                <span
+                  class="capitalize text-xl lg:text-2xl 2xl:text-3xl text-white"
+                  >bangladesh</span
+                >
+                <span
+                  class="bg-secondary text-white rounded-full xl:py-1 px-3 lg:px-4 2xl:px-6"
+                  >3 places</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="relative">
+              <img class="rounded-lg" src="../../img/bangladesh.jpg" alt="" />
+              <div class="absolute bottom-7 left-3 flex items-center space-x-4">
+                <span
+                  class="capitalize text-xl lg:text-2xl 2xl:text-3xl text-white"
+                  >bangladesh</span
+                >
+                <span
+                  class="bg-secondary text-white rounded-full xl:py-1 px-3 lg:px-4 2xl:px-6"
+                  >3 places</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="relative">
+              <img class="rounded-lg" src="../../img/bangladesh.jpg" alt="" />
+              <div class="absolute bottom-7 left-3 flex items-center space-x-4">
+                <span
+                  class="capitalize text-xl lg:text-2xl 2xl:text-3xl text-white"
+                  >bangladesh</span
+                >
+                <span
+                  class="bg-secondary text-white rounded-full xl:py-1 px-3 lg:px-4 2xl:px-6"
+                  >3 places</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- subscribe -->
+        <div class="bg-[#404A5E]">
+          <div
+            class="small-container lg:flex py-8 items-center justify-center space-y-4 lg:space-y-0"
+          >
+            <div class="block text-center lg:text-start lg:w-1/3">
+              <h3 class="capitalize text-2xl text-white">
+                subscribe our newsletter
+              </h3>
+              <p class="text-gray-300">
+                subscribe newsletter to get offers and about new places to
+                discover
+              </p>
+            </div>
+            <div
+              class="block lg:w-2/3 space-y-4 md:space-y-0 md:space-x-5 text-center"
+            >
+              <input
+                class="block md:inline-block px-2 py-2 w-full sm:w-3/4 md:w-80 mx-auto rounded-lg outline-none"
+                type="text"
+                placeholder="Email"
+              />
+              <button
+                class="bg-primary hover:bg-red-500 transition-colors text-white py-2 px-4 rounded-lg font-semibold"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- popular places -->
+        <div class="small-container">
+          <div class="w-full lg:w-1/2 text-center mx-auto">
+            <h2 class="capitalize text-4xl font-semibold">popular places</h2>
+            <p class="py-4 text-lg text-gray-600">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              atque, aut esse ab modi accusantium qui corrupti. Ab, quidem
+              blanditiis?
+            </p>
+          </div>
+
+          <div class="gallery">
+            <div class="text-start bg-white rounded-lg">
+              <!-- place photo -->
+              <img class="rounded-t-lg" src="../../img/california.jpg" alt="" />
+              <div class="py-6 lg:py-8">
+                <div class="lg:pb-6 px-4">
+                  <h1 class="text-2xl font-semibold capitalize tracking-wide">
+                    california
+                  </h1>
+                  <p class="text-gray-500 py-2">Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <!-- place star -->
+                <div
+                  class="block space-y-2 md:flex md:space-y-0 lg:block lg:space-y-4 2xl:flex 2xl:space-y-0 px-4 items-center justify-between"
+                >
+                  <div class="flex items-center">
+                    <p class="text-xs">
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                    </p>
+                    <p class="text-base text-gray-500">(20 Review)</p>
+                  </div>
+                  <div class="flex items-center space-x-3 text-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <p>5 Days</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-start bg-white rounded-lg">
+              <!-- place photo -->
+              <img class="rounded-t-lg" src="../../img/california.jpg" alt="" />
+              <div class="py-6 lg:py-8">
+                <div class="lg:pb-6 px-4">
+                  <h1 class="text-2xl font-semibold capitalize tracking-wide">
+                    california
+                  </h1>
+                  <p class="text-gray-500 py-2">Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <!-- place star -->
+                <div
+                  class="block space-y-2 md:flex md:space-y-0 lg:block lg:space-y-4 2xl:flex 2xl:space-y-0 px-4 items-center justify-between"
+                >
+                  <div class="flex items-center">
+                    <p class="text-xs">
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                    </p>
+                    <p class="text-base text-gray-500">(20 Review)</p>
+                  </div>
+                  <div class="flex items-center space-x-3 text-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <p>5 Days</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-start bg-white rounded-lg">
+              <!-- place photo -->
+              <img class="rounded-t-lg" src="../../img/california.jpg" alt="" />
+              <div class="py-6 lg:py-8">
+                <div class="lg:pb-6 px-4">
+                  <h1 class="text-2xl font-semibold capitalize tracking-wide">
+                    california
+                  </h1>
+                  <p class="text-gray-500 py-2">Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <!-- place star -->
+                <div
+                  class="block space-y-2 md:flex md:space-y-0 lg:block lg:space-y-4 2xl:flex 2xl:space-y-0 px-4 items-center justify-between"
+                >
+                  <div class="flex items-center">
+                    <p class="text-xs">
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                    </p>
+                    <p class="text-base text-gray-500">(20 Review)</p>
+                  </div>
+                  <div class="flex items-center space-x-3 text-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <p>5 Days</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-start bg-white rounded-lg">
+              <!-- place photo -->
+              <img class="rounded-t-lg" src="../../img/california.jpg" alt="" />
+              <div class="py-6 lg:py-8">
+                <div class="lg:pb-6 px-4">
+                  <h1 class="text-2xl font-semibold capitalize tracking-wide">
+                    california
+                  </h1>
+                  <p class="text-gray-500 py-2">Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <!-- place star -->
+                <div
+                  class="block space-y-2 md:flex md:space-y-0 lg:block lg:space-y-4 2xl:flex 2xl:space-y-0 px-4 items-center justify-between"
+                >
+                  <div class="flex items-center">
+                    <p class="text-xs">
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                    </p>
+                    <p class="text-base text-gray-500">(20 Review)</p>
+                  </div>
+                  <div class="flex items-center space-x-3 text-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <p>5 Days</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-start bg-white rounded-lg">
+              <!-- place photo -->
+              <img class="rounded-t-lg" src="../../img/california.jpg" alt="" />
+              <div class="py-6 lg:py-8">
+                <div class="lg:pb-6 px-4">
+                  <h1 class="text-2xl font-semibold capitalize tracking-wide">
+                    california
+                  </h1>
+                  <p class="text-gray-500 py-2">Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <!-- place star -->
+                <div
+                  class="block space-y-2 md:flex md:space-y-0 lg:block lg:space-y-4 2xl:flex 2xl:space-y-0 px-4 items-center justify-between"
+                >
+                  <div class="flex items-center">
+                    <p class="text-xs">
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                    </p>
+                    <p class="text-base text-gray-500">(20 Review)</p>
+                  </div>
+                  <div class="flex items-center space-x-3 text-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <p>5 Days</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-start bg-white rounded-lg">
+              <!-- place photo -->
+              <img class="rounded-t-lg" src="../../img/california.jpg" alt="" />
+              <div class="py-6 lg:py-8">
+                <div class="lg:pb-6 px-4">
+                  <h1 class="text-2xl font-semibold capitalize tracking-wide">
+                    california
+                  </h1>
+                  <p class="text-gray-500 py-2">Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <!-- place star -->
+                <div
+                  class="block space-y-2 md:flex md:space-y-0 lg:block lg:space-y-4 2xl:flex 2xl:space-y-0 px-4 items-center justify-between"
+                >
+                  <div class="flex items-center">
+                    <p class="text-xs">
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                      <span
+                        class="material-symbols-outlined fill-icon text-yellow-500"
+                      >
+                        star
+                      </span>
+                    </p>
+                    <p class="text-base text-gray-500">(20 Review)</p>
+                  </div>
+                  <div class="flex items-center space-x-3 text-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <p>5 Days</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-10">
+            <a
+              class="capitalize bg-primary hover:bg-red-500 transition-colors text-white py-3 px-12 font-semibold rounded-md"
+              href="#"
+              >more places</a
+            >
+          </div>
+        </div>
+
+        <!-- video -->
+        <div class="bg-[url('../../img/videoBackground.jpg')]">
+          <div class="small-container flex items-center justify-center">
+            <div class="icons md:py-8 lg:py-16">
+              <h3
+                class="font-fancy text-4xl md:text-6xl lg:text-7xl text-white mb-10"
+              >
+                Enjoy Video
+              </h3>
+              <a href="#" class="">
+                <span
+                  class="material-symbols-outlined fill-icon text-white text-5xl bg-teal-600 rounded-full p-2 lg:p-4 video_play_button"
+                >
+                  play_arrow
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="small-container">
+          <div class="gallery">
+            <div>
+              <span class="material-symbols-outlined text-7xl text-primary">
+                train
+              </span>
+              <h2 class="capitalize text-2xl font-semibold text-gray-700">
+                comfortable journey
+              </h2>
+              <p class="py-4 text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
+                beatae.
+              </p>
+            </div>
+
+            <div>
+              <span class="material-symbols-outlined text-7xl text-primary">
+                hotel
+              </span>
+              <h2 class="capitalize text-2xl font-semibold text-gray-700">
+                luxuries hotel
+              </h2>
+              <p class="py-4 text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
+                beatae.
+              </p>
+            </div>
+
+            <div>
+              <span class="material-symbols-outlined text-7xl text-primary">
+                travel_explore
+              </span>
+              <h2 class="capitalize text-2xl font-semibold text-gray-700">
+                travel guide
+              </h2>
+              <p class="py-4 text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
+                beatae.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- review -->
+        <div class="flex bg-blue-100">
+          <div class="small-container text-center">
+            <div class="w-24 h-24 overflow-hidden rounded-full mx-auto">
+              <img
+                src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt=""
+              />
+            </div>
+            <div class="py-6 lg:w-1/2 mx-auto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                adipisci eos quidem numquam veniam tempore inventore nisi non
+                veritatis illo.
+              </p>
+              <p class="capitalize py-4 text-gray-500">- john doe</p>
+            </div>
+
+            <div class="space-x-3">
+              <span
+                class="material-symbols-outlined fill-icon text-lg text-gray-600"
+              >
+                radio_button_unchecked
+              </span>
+              <span
+                class="material-symbols-outlined fill-icon text-lg text-primary"
+              >
+                radio_button_unchecked
+              </span>
+              <span
+                class="material-symbols-outlined fill-icon text-lg text-gray-600"
+              >
+                radio_button_unchecked
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- recent trips -->
+        <div class="small-container">
+          <h3 class="text-4xl font-semibold capitalize">recent trips</h3>
+          <div class="gallery">
+            <div class="overflow-hidden rounded-md">
+              <img
+                class="rounded-md"
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                alt=""
+              />
+              <div class="text-start py-3 text-xs">
+                <p class="text-gray-500">Oct 12, 2019</p>
+                <h4 class="text-2xl font-semibold py-4">
+                  Journeys are best measured in new friends
+                </h4>
+              </div>
+            </div>
+
+            <div class="overflow-hidden rounded-md">
+              <img
+                class="rounded-md"
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                alt=""
+              />
+              <div class="text-start py-3 text-xs">
+                <p class="text-gray-500">Oct 12, 2019</p>
+                <h4 class="text-2xl font-semibold py-4">
+                  Journeys are best measured in new friends
+                </h4>
+              </div>
+            </div>
+
+            <div class="overflow-hidden rounded-md">
+              <img
+                class="rounded-md"
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                alt=""
+              />
+              <div class="text-start py-3 text-xs">
+                <p class="text-gray-500">Oct 12, 2019</p>
+                <h4 class="text-2xl font-semibold py-4">
+                  Journeys are best measured in new friends
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="bg-tertiary flex items-center">
+          <div class="small-container pb-0 px-4 2xl:px-3">
+            <div class="pb-10 border-b border-gray-500">
+              <div
+                class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+              >
+                <!-- 1st column -->
+                <div class="text-start space-y-8">
+                  <img src="../../img/footer_logo.png" alt="" />
+                  <div class="space-y-1">
+                    <p class="text-gray-400">
+                      5th flora, 700/D kings road, green lane New York-1782
+                    </p>
+                    <p>
+                      <a
+                        class="text-gray-400 hover:text-primary transition-colors"
+                        href="tel:+8801521505230"
+                        >+880 1521-505230</a
+                      >
+                    </p>
+                    <p>
+                      <a
+                        class="text-gray-400 hover:text-primary transition-colors"
+                        href="mailto:ashikcse321@gmail.com"
+                        >ashikcse321@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 2nd column -->
+                <div class="text-gray-400 text-start space-y-8">
+                  <h3 class="capitalize text-2xl text-white">company</h3>
+                  <ul class="space-y-3">
+                    <li>
+                      <a class="hover:text-primary transition-colors" href="#"
+                        >pricing</a
+                      >
+                    </li>
+                    <li>
+                      <a class="hover:text-primary transition-colors" href="#"
+                        >about</a
+                      >
+                    </li>
+                    <li>
+                      <a class="hover:text-primary transition-colors" href="#"
+                        >gallery</a
+                      >
+                    </li>
+                    <li>
+                      <a class="hover:text-primary transition-colors" href="#"
+                        >contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 3rd column -->
+                <div class="text-gray-400 text-start space-y-8">
+                  <h3 class="capitalize text-2xl text-white">
+                    popular destination
+                  </h3>
+                  <ul class="grid grid-cols-2 gap-2 capitalize">
+                    <li>Indonesia</li>
+                    <li>America</li>
+                    <li>India</li>
+                    <li>Switzerland</li>
+                    <li>Italy</li>
+                    <li>Canada</li>
+                    <li>Franch</li>
+                    <li>England</li>
+                    <li>china</li>
+                  </ul>
+                </div>
+
+                <!-- 4th column -->
+                <div class="text-start space-y-8">
+                  <h3 class="capitalize text-2xl text-white">instragram</h3>
+                  <ul
+                    class="grid grid-flow-row grid-cols-2 md:grid-cols-3 gap-3"
+                  >
+                    <li>
+                      <a href="#"
+                        ><img class="rounded-md" src="../../img/1.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img class="rounded-md" src="../../img/2.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img class="rounded-md" src="../../img/3.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img class="rounded-md" src="../../img/4.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img class="rounded-md" src="../../img/5.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img class="rounded-md" src="../../img/6.jpg" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- social media links -->
+              <div
+                class="text-gray-400 space-x-4 text-xl text-center py-6 lg:text-start"
+              >
+                <a
+                  class="transition-colors hover:text-primary"
+                  href="#"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  class="transition-colors hover:text-primary"
+                  href="#"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  class="transition-colors hover:text-primary"
+                  href="#"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  class="transition-colors hover:text-primary"
+                  href="#"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a
+                  class="transition-colors hover:text-primary"
+                  href="#"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- copyright -->
+            <div class="text-center py-8 text-gray-400">
+              <p>
+                Copyright ©2023 All rights reserved | This template is made by
+                <a
+                  class="capitalize text-primary"
+                  href="https://ashikcse045.github.io/"
+                  target="_blank"
+                  >ashik</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
