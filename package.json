@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/tailwindcss.css -o ./styles/style.css -w"
+    "test": "tailwindcss -i ./src/tailwindcss.css -o ./dist/output.css -w",
+    "build": "npx tailwindcss -o ./dist/output.css --minify"
   },
   "keywords": [],
   "author": "",
