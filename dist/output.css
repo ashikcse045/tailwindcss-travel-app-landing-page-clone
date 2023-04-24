@@ -916,12 +916,16 @@ video {
   background-image: url('../../img/videoBackground.jpg');
 }
 
-.bg-\[url\(\'\.\/img\/banner\.jpg\'\)\]{
-  background-image: url('./img/banner.jpg');
+.bg-\[url\(\'\.\.\/\.\.\.\/img\/videoBackground\.jpg\'\)\]{
+  background-image: url('../.../img/videoBackground.jpg');
 }
 
-.bg-\[url\(\'\.\/img\/videoBackground\.jpg\'\)\]{
-  background-image: url('./img/videoBackground.jpg');
+.bg-\[url\(\'\.\.\/img\/banner\.jpg\'\)\]{
+  background-image: url('../img/banner.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/videoBackground\.jpg\'\)\]{
+  background-image: url('../img/videoBackground.jpg');
 }
 
 .bg-cover{
