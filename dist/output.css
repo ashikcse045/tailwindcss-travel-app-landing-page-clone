@@ -908,24 +908,20 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/\.\.\/img\/banner\.jpg\'\)\]{
-  background-image: url('../../img/banner.jpg');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/img\/videoBackground\.jpg\'\)\]{
-  background-image: url('../../img/videoBackground.jpg');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\.\/img\/videoBackground\.jpg\'\)\]{
-  background-image: url('../.../img/videoBackground.jpg');
-}
-
 .bg-\[url\(\'\.\.\/img\/banner\.jpg\'\)\]{
   background-image: url('../img/banner.jpg');
 }
 
 .bg-\[url\(\'\.\.\/img\/videoBackground\.jpg\'\)\]{
   background-image: url('../img/videoBackground.jpg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/img\/videoBackground\.jpg\'\)\]{
+  background-image: url('./../img/videoBackground.jpg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/img\/banner\.jpg\'\)\]{
+  background-image: url('./../img/banner.jpg');
 }
 
 .bg-cover{
